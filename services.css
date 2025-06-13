@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: "Questrial", sans-serif;
+    overflow-x:hidden;
+    min-height: 200vh;
+    font-family: "Poppins", sans-serif;
+}
+
+#pag3 {
+    background: url('https://preview.colorlib.com/theme/bitmap/img/banner/home-banner.jpg');
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 60vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 45%);
+    padding: 15px 50px;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+nav a.active { 
+    color: #ffd700; 
+} 
+nav a:hover {
+    color: #ffd700;
+}
+nav svg {
+    cursor: pointer;
+    margin-right: 50px;
+    fill: #fff;
+}
+
+h1 {    
+    display: flex;
+    padding-top: 10vh;
+    font-size: 3em;
+    color: #fff;
+    justify-content: center;
+}
+.page-link {
+    padding-top: 2vh;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.page-link a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.page-link a:hover {
+    color: #ffd700;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+.services {
+    position: relative;
+    top: 40vh;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.services h1 {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    display: inline;
+    cursor: pointer;
+}
+.services p {
+    font-size: 1em;
+    color: #888;
+    font-weight: 300;
+}
+.services:hover {
+    background-color: #ffd700;
+}
+.follow-instagram{
+    color: #222222;
+    font-weight: 600;
+    background: #ffd700;
+    padding: 25px 30px;
+    margin-top: 25vh;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    margin-left: 50%;
+    position: relative;
+    top: 40vh;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.images-container {
+    margin-top: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image-item{
+    flex: 1;
+    overflow: hidden;
+}
+.image-item img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.image-item:hover img {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #0c0c22;
+    color: #888;
+    padding: 60px 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-column p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-copy {
+    font-size: 14px;
+}
+.footer-copy span {
+    color: #ccc;
+}
+.footer-copy a {
+    color: #f4d60d;
+    text-decoration: none;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #444;
+}
+
+.newsletter-form button {
+    background-color: #f4d60d;
+    border: none;
+    padding: 12px 20px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin-right: 12px;
+    fill: #ccc;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    fill: #f4d60d;
+}
